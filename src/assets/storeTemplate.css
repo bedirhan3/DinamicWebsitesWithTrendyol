@@ -1,0 +1,5 @@
+.header-logo img, .footer-logo img, .header-logo-2 img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}

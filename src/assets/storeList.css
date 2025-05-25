@@ -1,0 +1,253 @@
+/* Hacker Theme CSS for StoreList */
+.admin-layout {
+  background-color: #0a0a0a;
+  color: #33ff00;
+  font-family: 'Courier New', monospace;
+}
+.admin-layout small{
+  color: #33ff00;
+}
+
+.admin-layout .hacker-container {
+  background-color: #121212;
+  border: 1px solid #33ff00;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(51, 255, 0, 0.3);
+  margin-top: 30px;
+}
+
+.admin-layout .hacker-title {
+  color: #33ff00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #33ff00;
+  padding-bottom: 10px;
+  text-shadow: 0 0 5px rgba(51, 255, 0, 0.7);
+}
+
+.admin-layout .hacker-search {
+  background-color: #1a1a1a !important;
+  border: 1px solid #33ff00 !important;
+  color: #33ff00 !important;
+  padding: 10px;
+}
+
+.admin-layout .hacker-search::placeholder {
+  color: #33ff00;
+  opacity: 0.5;
+}
+
+.admin-layout .hacker-search-btn {
+  background-color: #1a1a1a;
+  border: 1px solid #33ff00;
+  color: #33ff00;
+}
+
+.admin-layout .hacker-search-btn:hover {
+  background-color: #33ff00;
+  color: #000;
+}
+
+/* Gelişmiş filtreleme için stiller */
+.admin-layout .filter-container {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(51, 255, 0, 0.5);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-layout .filter-group {
+  margin-bottom: 10px;
+}
+
+.admin-layout .filter-label {
+  display: block;
+  color: #33ff00;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.admin-layout .hacker-filter {
+  background-color: #121212 !important;
+  border: 1px solid rgba(51, 255, 0, 0.5) !important;
+  color: #33ff00 !important;
+  padding: 8px !important;
+  font-size: 0.9em !important;
+}
+
+.admin-layout .hacker-filter::placeholder {
+  color: rgba(51, 255, 0, 0.5) !important;
+}
+
+.admin-layout .hacker-filter:focus {
+  border-color: #33ff00 !important;
+  box-shadow: 0 0 0 0.2rem rgba(51, 255, 0, 0.25) !important;
+}
+
+/* Form check styling */
+.admin-layout .form-check-input {
+  background-color: #121212 !important;
+  border-color: #33ff00 !important;
+}
+
+.admin-layout .form-check-input:checked {
+  background-color: #33ff00 !important;
+  border-color: #33ff00 !important;
+}
+
+.admin-layout .form-check-label {
+  color: #33ff00 !important;
+}
+
+/* Tablo bootstrap geçersiz kılma */
+.admin-layout .hacker-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #33ff00;
+  background-color: #121212 !important; 
+  color: #33ff00;
+}
+
+.admin-layout .table {
+  --bs-table-bg: transparent !important;
+  --bs-table-color: #33ff00 !important;
+}
+
+/* Bootstrap override for table cells */
+.table>:not(caption)>*>* {
+  /* background-color: #181818 !important;
+  color: #ccc !important; */
+  border-bottom-color: rgba(51, 255, 0, 0.3) !important;
+  box-shadow: none !important;
+  padding: 10px !important;
+}
+
+.admin-layout .hacker-table thead {
+  background-color: #1a1a1a !important;
+}
+
+.admin-layout .hacker-table th,
+.admin-layout .table>thead>tr>th {
+  color: #33ff00 !important;
+  background-color: #1a1a1a !important;
+  padding: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #33ff00 !important;
+}
+
+.admin-layout .hacker-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(51, 255, 0, 0.3);
+  color: #ccc;
+  max-width: 400px;
+}
+
+.admin-layout .hacker-table tbody tr {
+  background-color: #181818;
+  transition: all 0.3s ease;
+}
+
+.admin-layout .hacker-table tbody tr:hover {
+  background-color: #222 !important;
+  box-shadow: 0 0 5px rgba(51, 255, 0, 0.5);
+}
+
+/* Buton düzenlemeleri */
+.admin-layout .hacker-btn {
+  background-color: transparent;
+  color: #33ff00 !important;
+  border: 1px solid #33ff00;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  margin-right: 8px;
+  line-height: 26px;
+}
+
+.admin-layout .hacker-btn:hover {
+  background-color: #33ff00;
+  color: #000 !important;
+  box-shadow: 0 0 10px rgba(51, 255, 0, 0.7);
+}
+
+.admin-layout .hacker-spinner {
+  color: #33ff00 !important;
+  width: 3rem;
+  height: 3rem;
+}
+
+.admin-layout .hacker-alert {
+  background-color: #400;
+  border: 1px solid #f00;
+  color: #f66;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.admin-layout .hacker-footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(51, 255, 0, 0.3);
+  color: #33ff00;
+  font-size: 0.9em;
+}
+
+/* Terminal effect */
+.admin-layout .terminal-effect:before {
+  content: "> ";
+}
+
+/* Pulsing cursor effect */
+.admin-layout .cursor-effect {
+  position: relative;
+}
+
+.admin-layout .cursor-effect::after {
+  content: "|";
+  position: absolute;
+  right: -10px;
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Navigation styling */
+.admin-layout .hacker-nav {
+  background-color: #121212;
+  border-bottom: 1px solid #33ff00;
+  padding: 10px 0;
+}
+
+.admin-layout .hacker-nav-link {
+  color: #33ff00;
+  padding: 10px 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.admin-layout  .hacker-nav-link:hover,
+.admin-layout .hacker-nav-link.active {
+  background-color: rgba(51, 255, 0, 0.2);
+  box-shadow: 0 0 10px rgba(51, 255, 0, 0.3);
+} 

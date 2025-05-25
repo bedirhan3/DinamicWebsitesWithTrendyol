@@ -1,0 +1,205 @@
+/* Hacker Theme CSS for StoreView */
+.store-view-container {
+  background-color: #121212;
+  border: 1px solid #33ff00;
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(51, 255, 0, 0.3);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.store-view-header {
+  border-bottom: 2px solid #33ff00;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.store-view-title {
+  color: #33ff00;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(51, 255, 0, 0.6);
+}
+
+.store-view-subtitle {
+  color: #cccccc;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.store-view-section {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(51, 255, 0, 0.5);
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.store-view-section-title {
+  color: #33ff00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(51, 255, 0, 0.3);
+}
+
+.store-view-label {
+  color: #33ff00;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.store-view-value {
+  color: #cccccc;
+  background-color: #0a0a0a;
+  padding: 8px 12px;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 15px;
+  border-left: 3px solid #33ff00;
+  font-family: 'Courier New', monospace;
+}
+
+.store-view-back-btn, .update-store {
+  background-color: transparent;
+  color: #33ff00;
+  border: 1px solid #33ff00;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', monospace;
+  display: inline-block;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.store-view-back-btn:hover, .update-store:hover {
+  background-color: #33ff00;
+  color: #000;
+  box-shadow: 0 0 10px rgba(51, 255, 0, 0.7);
+}
+
+.store-view-stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.store-view-stat-icon {
+  margin-right: 10px;
+  color: #33ff00;
+  font-size: 1.2rem;
+}
+
+.store-view-stat-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #33ff00;
+}
+
+.store-view-stat-label {
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+/* Stats box */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 150px;
+  background-color: #0a0a0a;
+  border: 1px solid rgba(51, 255, 0, 0.5);
+  padding: 15px;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(51, 255, 0, 0.2);
+}
+
+.stat-value {
+  font-size: 2rem;
+  color: #33ff00;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.stat-label {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* ASCII art section */
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  color: #33ff00;
+  background-color: #0a0a0a;
+  padding: 15px;
+  margin: 20px 0;
+  overflow-x: auto;
+  border: 1px solid rgba(51, 255, 0, 0.3);
+}
+
+/* Glitch animation effect */
+.glitch-text {
+  position: relative;
+  color: #33ff00;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -1px 0 #ff00cc;
+  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: 1px 0 #00ccff;
+  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+  0%, 80%, 100% { opacity: 0; }
+  40%, 43% { opacity: 1; }
+}
+
+@keyframes glitch-anim-2 {
+  0%, 85%, 100% { opacity: 0; }
+  33%, 36% { opacity: 1; }
+}
+
+@media (max-width:768px) {
+  .store-view-back-btn, .update-store{
+    width: 100%;
+  }
+}
