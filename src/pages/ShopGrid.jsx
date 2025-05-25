@@ -566,11 +566,11 @@ function ShopGrid() {
                 <div className="container">
                     <div className="product-details-wrapper">
                         <div className="top-content">
-                            <h2>Only Categories</h2>
+                            <h2>Sadece Kategoriler</h2>
                             <ul className="list">
-                                <li>Home</li>
+                                <li>Ana Sayfa</li>
                                 <li>
-                                    Only Categories
+                                    Sadece Kategoriler
                                 </li>
                             </ul>
                         </div>
@@ -588,33 +588,33 @@ function ShopGrid() {
                                         </a>
                                     </li>
                                 </ul>
-                                <p>Showing 1–14 of 26 results</p>
+                                <p>26 sonuçtan 1-14 arası gösteriliyor</p>
                             </div>
                             <div className="shop-right">
                                 <div className="form-clt">
                                     <div className="nice-select" tabIndex="0">
                                         <span className="current">
-                                            Default sorting
+                                            Varsayılan sıralama
                                         </span>
                                         <ul className="list">
                                             <li data-value="1" className="option selected focus">
-                                                Default sorting
+                                                Varsayılan sıralama
                                             </li>
                                             <li data-value="1" className="option">
-                                                Sort by popularity
+                                                Popülerliğe göre sırala
                                             </li>
                                             <li data-value="1" className="option">
-                                                Sort by average rating
+                                                Ortalama puana göre sırala
                                             </li>
                                             <li data-value="1" className="option">
-                                                Sort by latest
+                                                Yeniliğe göre sırala
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div id="openButton2">
                                     <div className="filter-button">
-                                        <h6><a href="#"><span><i className="fas fa-filter"></i></span>Filter</a></h6>
+                                        <h6><a href="#"><span><i className="fas fa-filter"></i></span>Filtrele</a></h6>
                                     </div>
                                 </div>
                             </div>
