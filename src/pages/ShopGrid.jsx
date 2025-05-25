@@ -566,11 +566,11 @@ function ShopGrid() {
                 <div className="container">
                     <div className="product-details-wrapper">
                         <div className="top-content">
-                            <h2>Sadece Kategoriler</h2>
+                            <h2>{storeInfo?.name}</h2>
                             <ul className="list">
                                 <li>Ana Sayfa</li>
                                 <li>
-                                    Sadece Kategoriler
+                                    {storeInfo?.name}
                                 </li>
                             </ul>
                         </div>
