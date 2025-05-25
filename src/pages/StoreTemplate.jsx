@@ -1,5 +1,4 @@
 import React from 'react'
-import "../assets/StoreTemplate.css"
 
 function StoreTemplate() {
     return (
