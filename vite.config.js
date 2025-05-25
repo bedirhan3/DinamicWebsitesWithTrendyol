@@ -13,5 +13,12 @@ export default defineConfig({
         secure: false
       }
     }
+  },
+  build: {
+    sourcemap: false,
+    cssCodeSplit: false
+  },
+  css: {
+    devSourcemap: false
   }
 })
