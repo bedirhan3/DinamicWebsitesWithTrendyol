@@ -21,12 +21,13 @@ function ProductView() {
 
 
 
+    const WORKER_URL = 'https://td.tehesap3.workers.dev';
 
 
     let config2 = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: 'https://www.trendyol.com'+decodedLink+'&v=xl&filterOverPriceListings=false',
+        url: `${WORKER_URL}/api/${decodedLink}&v=xl&filterOverPriceListings=false`,
         headers: { }
       };
 
