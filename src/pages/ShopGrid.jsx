@@ -614,7 +614,7 @@ function ShopGrid() {
                                 </div>
                                 <div id="openButton2">
                                     <div className="filter-button">
-                                        <h6><a href="#"><span><img src="../../assets/img/filter.png" alt="img" /></span>Filter</a></h6>
+                                        <h6><a href="#"><span><i className="fas fa-filter"></i></span>Filter</a></h6>
                                     </div>
                                 </div>
                             </div>
